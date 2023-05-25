@@ -9,12 +9,15 @@
 
 const controlFontSize = document.querySelector('#font-size-control');
 const textEl = document.querySelector('#text');
-
+textEl.style.fontSize = controlFontSize.value + 'px';
 controlFontSize.addEventListener('input', (e) => {
-
+  
+  
+  const fontSize = e.target.value + 'px';
+    
     // console.log(e);
-    const fontSize = controlFontSize.value + 'px';
-    console.log(controlFontSize.value);
+    
+    console.log(e.target.value);
     textEl.style.fontSize = fontSize;
    
   });

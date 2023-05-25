@@ -17,7 +17,7 @@
 const input = document.querySelector('#validation-input');
 
 
-input.addEventListener('focus', (e) => {
+input.addEventListener('blur', (e) => {
     const expectedLength = parseInt(input.getAttribute('data-length'))
     console.log(expectedLength);
 
